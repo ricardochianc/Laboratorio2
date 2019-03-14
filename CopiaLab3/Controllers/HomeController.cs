@@ -164,9 +164,9 @@ namespace CopiaLab3.Controllers
             escritor.Write(",");
             escritor.Write(nuevoPedido.Nit);
             escritor.Write(",");
-            escritor.Write("[");
             foreach (var item in nuevoPedido.Medicinas)
             {
+                escritor.Write("[");
                 escritor.Write(item.Nombre);
                 escritor.Write(",");
                 escritor.Write(item.Descripcion);
@@ -174,8 +174,8 @@ namespace CopiaLab3.Controllers
                 escritor.Write(item.Casa);
                 escritor.Write(",");
                 escritor.Write(item.Precio);
+                escritor.Write("]");
             }
-            escritor.Write("]");
             escritor.Write(",");
             escritor.Write("Q."+nuevoPedido.Total);
             escritor.Close();
