@@ -147,8 +147,7 @@ namespace CopiaLab3.Controllers
             contador++;
             var FilePath = string.Empty;
             var path = Server.MapPath("~/PedidosCSV/");
-            var cont = 0;
-
+            
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
