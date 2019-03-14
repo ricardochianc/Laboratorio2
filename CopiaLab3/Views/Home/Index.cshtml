@@ -1,0 +1,19 @@
+﻿@using CopiaLab3.Declaradores
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bienvenido</h2>
+<hr />
+<h5>La empresa "Tu salud en mis manos" se dedica a la distribución de fármacos a nivel nacional, se cuenta con un gran inventario de fármacos los cuales pueden ser obtenidos a través de pedidos.</h5>
+<h5>Cree un pedido o bien consulte información sobre un medicamento en específico</h5>
+
+
+@if (Data.Instance.ListaMedicinas.Count == 0)
+{
+    <hr />
+    <h6 style="color:darkred">Actualmente no hay inventario cargado, dirígase a la pestaña de "Carga"</h6>
+}
+

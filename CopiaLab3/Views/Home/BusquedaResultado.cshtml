@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Búsqueda";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resultado de búsqueda</h2>
+
+<p>
+    @Html.ActionLink("Regresar", "BusquedaNombre")
+</p>
+
+<table class="table">
+    <thead style="background-color:cornflowerblue">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Casa médica</th>
+            <th>Precio</th>
+            <th>Existencia</th>
+        </tr>
+    </thead>
+
+    <tr style="text-align: center">
+        <td>
+            @ViewBag.Id
+        </td>
+        <td>
+            @ViewBag.Nombre
+        </td>
+        <td>
+            @ViewBag.Descripcion
+        </td>
+        <td>
+            @ViewBag.Casa
+        </td>
+        <td>
+            Q.@ViewBag.Precio
+        </td>
+        <td>
+            @ViewBag.Existencia
+        </td>
+    </tr>
+
+</table>
